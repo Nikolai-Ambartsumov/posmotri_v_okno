@@ -120,6 +120,7 @@ ol {
 
 .content__accent {
   color: gray;
+  position: relative;
 }
 
 .content__video-card-title {
