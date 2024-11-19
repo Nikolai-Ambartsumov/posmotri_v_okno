@@ -53,7 +53,8 @@ ol {
 }
 
 .content__list {
-  height: 298px;
+  margin-top: 22px;
+  height: 297px;
   overflow-y: auto;
 }
 
@@ -110,7 +111,6 @@ ol {
 }
 
 .title {
-  margin-bottom: 26px;
   font-size: 75px;
   font-weight: 700;
   line-height: 70.5px;
@@ -122,16 +122,13 @@ ol {
   color: gray;
 }
 
-.content__card-link {
-  text-decoration: none;
-  color: white;
-}
-
 .content__video-card-title {
+  font-family: Oswald;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
+  margin-bottom: 5px;
 }
 
 .content__video-card-description {
@@ -163,9 +160,14 @@ ol {
   color: white;
   width: 225px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 21.6px;
+  font-size: 17px;
+  line-height: 24.6px;
   padding: 0;
+}
+
+.search-form__textfield::placeholder {
+  color: white;
+  opacity: 0.7;
 }
 
 .search-form__label {
@@ -194,7 +196,7 @@ ol {
   appearance: none;
   background: none;
   color: white;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   line-height: 21.6px;
   border: 1px solid white;
@@ -260,4 +262,35 @@ button:hover {
 .button:focus-visible {
   outline: 1px solid white;
   outline-offset: 1px;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 3px;
+}
+
+.content__card-link_current {
+  background-color: gray;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid white;
+}
+
+.content__card-link:hover .content__video-card-title {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+.content__card-link:hover .content__video-card-description {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
